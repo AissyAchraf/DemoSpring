@@ -8,7 +8,11 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
-    <bean id="myCoach" class="com.springdemo.baseballCoach">
+    <bean id="myCoach" class="com.springdemo.tennisCoach">
+    </bean>
+    <bean id="myLoggerConfig" class="com.springdemo.MyLoggerConfig" init-method="initLogger">
+    	<property name="rootLoggerLevel" value="FINE" />
+    	<property name="printedLoggerLevel" value="FINE"/>
     </bean>
     
 </beans>
