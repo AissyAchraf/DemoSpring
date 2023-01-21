@@ -7,4 +7,9 @@ public class tennisCoach implements Coach {
 		return "Play 5 matchs by day";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		return null;
+	}
+
 }
