@@ -25,6 +25,10 @@
 		
 		<!-- Set up the setter injection -->
 		<property name="fortuneService" ref="myFortuneService"/>
+		
+		<!-- inject literal values -->
+		<property name="emailAddresse" value="thebestcoach@yahoo.fr"/>
+		<property name="team" value="Sunrisers Hyderabad"/>
 	</bean>
     
     <bean id="myLoggerConfig" class="com.springdemo.MyLoggerConfig" init-method="initLogger">
